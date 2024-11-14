@@ -42,18 +42,19 @@ class OpenAIAPI:
                 text, but if the context suits it better, wrap the image with right alignment. The language of the alt 
                 text and captions should be the same as the language of the main text. 
     
-                3) Headers are paragraphs that end without a full stop. Wrap them in <h1>, <h2>, etc., as appropriate, 
-                and add anchor links using unique id attributes.
-    
-                4) Tag each paragraph with <p> tags.
-    
-                5) Use unordered lists where appropriate to improve readability.
-    
-                6) Find the most crucial parts of the text and tag them as <strong>. Avoid tagging single words, focus on powerful phrases. Don't overdo it though.
+                3) Headers are paragraphs that end without a full stop. Wrap them in <h1>, <h2>, etc., as appropriate.
                 
-                7) Add <hr> before the footnote and then put the footnote in a <small> element.
+                4) Enclose each major section in a <div> tag with a descriptive, unique id (e.g., <div id="ethical-challenges">), representing the theme of the content.
     
-                8) Use italics for company and product names.
+                5) Tag each paragraph with <p> tags.
+    
+                6) Use unordered lists where appropriate to improve readability.
+    
+                7) Find the most crucial parts of the text and tag them as <strong>. Avoid tagging single words, focus on powerful phrases. Don't overdo it though.
+                
+                8) Add <hr> before the footnote and then put the footnote in a <small> element.
+    
+                9) Use italics for company and product names.
                 
                 Do not wrap the output in any code block or triple quotes. Just provide the raw HTML content.
                 """
