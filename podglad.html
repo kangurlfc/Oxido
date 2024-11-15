@@ -1,3 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Artykuł Oxido</title>
+    <style>
+
+    /* ----------------- Global Settings ----------------- */
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: cover;
+        text-align: justify;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    p,figcaption {
+        font-family: "consolas", "sans-serif";
+
+    }
+    #adaptacja-i-innowacja {
+        margin-bottom: 5%;
+    }
+
+    /* ----------------- Headings ----------------- */
+    h1 {
+        font-family: "press start 2p", "consolas";
+        font-size: 190%;
+        text-align: left;
+        border: 5px solid;
+        padding: 10px;
+    }
+
+    h2{
+        font-family: "teko", "consolas";
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    /* ----------------- Hover effect over headings ----------------- */
+
+    h1, h2{
+        transition: transform 0.3s ease-in-out;
+    }
+    h1:hover, h2:hover{
+        transform: scale(1.05);
+    }
+
+    /* ----------------- Images in figures ----------------- */
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ----------------- Divs animation ----------------- */
+    .section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+        animation-delay: 0.25s;
+    }
+
+    /* ----------------- Fade-in animation ----------------- */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* ----------------- Cascading delays for each div ----------------- */
+    #wpw-sztuczna-inteligencja {
+    animation-delay: 0s;
+    }
+
+    #wpw-uczenie-maszynowe {
+        animation-delay: 0.3s;
+    }
+
+    #wyzwania-etyczne {
+        animation-delay: 0.6s;
+    }
+
+    #harmonijne-wspolistnienie {
+        animation-delay: 0.9s;
+    }
+
+    #automatyzacja {
+        animation-delay: 1.2s;
+    }
+
+    #przyszlosc-pracy {
+        animation-delay: 1.5s;
+    }
+
+    #adaptacja-i-innowacja {
+        animation-delay: 1.8s;
+    }
+
+    /* ----------------- Horizontal Line (hr) ----------------- */
+    hr {
+        border: none;
+        height: 2px;
+        background-color: #ddd;
+        margin: 10px 0;
+    }
+
+    /* ----------------- Media Queries (Responsive Design) ----------------- */
+    @media (max-width: 768px) {
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    </style>
+
+</head>
+<body>
 <h1>Sztuczna inteligencja: wpływ i wyzwania</h1>
 
 <div id="wpw-sztuczna-inteligencja" class="section">
@@ -12,7 +144,7 @@
 
 <div id="wyzwania-etyczne" class="section">
     <p>Kluczowym wyzwaniem jest zapewnienie <strong>etycznego i odpowiedzialnego rozwoju AI</strong>. Należy zwracać uwagę na uprzedzenia w danych treningowych, które mogą prowadzić do dyskryminacji, oraz na wpływ AI na prywatność i nierówności społeczne. Ważne jest opracowanie ram etycznych i mechanizmów nadzoru regulujących rozwój i wdrażanie AI, a także włączanie różnych grup społecznych w ten proces. Transparentność działań firm i instytucji może pomóc w budowaniu zaufania do technologii.</p>
-    
+
     <figure>
         <img src="image_placeholder.jpg" alt="Mężczyzna objaśniający etyczne aspekty sztucznej inteligencji w trakcie prezentacji dla różnych grup społecznych." />
         <figcaption>Prezentacja dotycząca etyki w sztucznej inteligencji.</figcaption>
@@ -21,7 +153,7 @@
 
 <div id="harmonijne-wspolistnienie" class="section">
     <p>Badacze pracują nad rozwiązaniami umożliwiającymi <strong>harmonijne współistnienie ludzi i AI</strong>, koncentrując się na tworzeniu systemów wspierających człowieka, a nie go zastępujących. Istotne jest opracowywanie mechanizmów współpracy między człowiekiem a maszyną, co sprzyja synergii i skutecznej komunikacji.</p>
-    
+
     <figure>
         <img src="image_placeholder.jpg" alt="Interakcja między człowiekiem a robotem, demonstrująca współpracę w codziennych zadaniach." />
         <figcaption>Interakcja między człowiekiem a robotem.</figcaption>
@@ -44,3 +176,5 @@
 
 <hr>
 <small>*Tekst opracowany przez AI. W <i>Oxido</i> nie mamy aż tak cukierkowego spojrzenia na sztuczną inteligencję... ;)</small>
+</body>
+</html>
